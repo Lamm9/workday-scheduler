@@ -77,7 +77,10 @@ $(function () {
 
  localStorage.getItem('11AM', futureInput);
   // TODO: Add code to display the current date in the header of the page.
- var header = $('<h1>');
- document.createElement(header);
+ var currentDate = dayjs().format('MM-DD-YYYY');
+
+ var header = $('<h1>' + currentDate + '</h1>');
+
+ $('header').append(header);
 
 });

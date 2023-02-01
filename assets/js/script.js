@@ -49,32 +49,35 @@ $(function () {
  console.log(currentTime);
 
  if (currentTime > 11) {
-  nine.classList.add('past');
-  ten.classList.add('past');
-  eleven.classList.add('past');
+  nine.className = 'past';
+  ten.className = 'past';
+  eleven.className = 'past';
  }
  else if (currentTime < 9) {
-  nine.classList.add('future');
-  ten.classList.add('future');
-  eleven.classList.add('future');
+  nine.className = 'future';
+  ten.className = 'future';
+  eleven.className = 'future';
  }
  else if (currentTime == 9) {
-  nine.classList.add('present');
+  nine.className = 'present';
  }
  else if (currentTime == 10) {
-  ten.classList.add('present');
+  ten.className = 'present';
  }
  else if (currentTime == 11) {
-  eleven.classList.add('present');
+  eleven.className = 'present';
  }
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-localStorage.getItem('9AM', pastInput);
+ localStorage.getItem('9AM', pastInput);
 
-localStorage.getItem('10AM', presentInput);
+ localStorage.getItem('10AM', presentInput);
 
-localStorage.getItem('11AM', futureInput);
+ localStorage.getItem('11AM', futureInput);
   // TODO: Add code to display the current date in the header of the page.
+ var header = $('<h1>');
+ document.createElement(header);
+
 });

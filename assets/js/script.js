@@ -24,7 +24,7 @@ $(function () {
     localStorage.setItem('9AM',pastInput);
   }
   saveInfoPresent = function () {
-    localStorage.setItem('10AM',presentInput);
+    localStorage.setItem('10AM', presentInput);
   }
   saveInfoFuture = function () {
     localStorage.setItem('11AM',futureInput);
@@ -71,10 +71,10 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-localStorage.getItem('9AM');
+localStorage.getItem('9AM', pastInput);
 
-localStorage.getItem('10AM');
+localStorage.getItem('10AM', presentInput);
 
-localStorage.getItem('11AM');
+localStorage.getItem('11AM', futureInput);
   // TODO: Add code to display the current date in the header of the page.
 });
